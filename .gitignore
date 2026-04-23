@@ -1,0 +1,22 @@
+### Gradle ###
+.gradle/
+build/
+out/
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+
+### VS Code / Cursor ###
+.vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Logs ###
+*.log
+
+### Env / secrets ###
+.env
+.env.*
