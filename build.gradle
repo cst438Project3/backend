@@ -18,6 +18,7 @@ repositories {
 }
 
 dependencies {
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-security-oauth2-client'
@@ -41,4 +42,21 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+tasks.register('unitTest', Test) {
+	group = 'verification'
+	description = 'Runs JUnit unit tests (tagged with unit).'
+	useJUnitPlatform {
+		includeTags 'unit'
+	}
+}
+
+tasks.register('integrationTest', Test) {
+	group = 'verification'
+	description = 'Runs JUnit integration tests (tagged with integration).'
+	useJUnitPlatform {
+		includeTags 'integration'
+	}
+	shouldRunAfter(tasks.named('test'))
 }

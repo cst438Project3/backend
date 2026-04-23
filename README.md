@@ -55,3 +55,30 @@ This allows:
 
 - local development with H2 by default
 - containerized development with PostgreSQL via `docker-compose.yml`
+
+## Testing with JUnit
+
+This project is configured to run tests with JUnit 5 (Jupiter) on Gradle.
+
+Run all tests:
+
+```bash
+./gradlew test
+```
+
+Run only unit tests (tagged with `unit`):
+
+```bash
+./gradlew unitTest
+```
+
+Run only integration tests (tagged with `integration`):
+
+```bash
+./gradlew integrationTest
+```
+
+Current test setup:
+
+- `BackendUnitTests` is a JUnit unit-test example.
+- `BackendApplicationTests` is a Spring Boot integration test that uses the `test` profile.
