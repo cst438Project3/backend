@@ -105,6 +105,10 @@ The backend expects these environment variables:
 ```bash
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
+APP_AUTH_JWT_SECRET=at-least-32-bytes-change-this-in-production
+APP_AUTH_SUCCESS_REDIRECT_URI=http://localhost:8081/auth/callback
+APP_AUTH_ALLOWED_REDIRECT_URIS=http://localhost:8081/auth/callback,http://localhost:19006/auth/callback,transferme://auth/callback
+APP_CORS_ALLOWED_ORIGINS=http://localhost:8081,http://localhost:19006,http://localhost:3000
 ```
 
 Create a Google OAuth client in Google Cloud Console and add this redirect URI:
@@ -121,57 +125,35 @@ https://your-domain.com/login/oauth2/code/google
 
 ## Current login flow in this backend
 
-With the current code, Spring Security handles the browser login flow:
+Spring Security handles the Google OAuth2 browser flow, then the backend issues an app JWT for React Native/web API calls:
 
-1. The frontend opens `/oauth2/authorization/google`
+1. The frontend opens `/oauth2/authorization/google?redirect_uri=YOUR_CALLBACK_URI`
 2. Google redirects back to `/login/oauth2/code/google`
-3. Spring Security creates the authenticated session
-4. The frontend calls `/api/google/oauth`
-5. The backend returns the logged-in user's `email` and `name`
+3. The backend creates or updates an `app_user` row
+4. The backend redirects to the allowed callback URI with `token` and `token_type=Bearer`
+5. The frontend stores the token and sends it on API calls:
+
+```text
+Authorization: Bearer YOUR_TOKEN
+```
+
+The frontend can then call:
+
+- `/api/auth/me` for the current authenticated user
+- `/api/google/oauth` as a backwards-compatible alias for the same user info
 
 ## React Native note (important)
 
-The current implementation is **session-based** (`oauth2Login()`), which is a great skeleton for a browser-based app.
+Because React Native does not reliably share backend session cookies between the browser login and API requests, this backend now uses the mobile-friendly pattern: Spring Boot owns Google OAuth2 and returns a bearer token to the app callback.
 
-For a **React Native** app, a token-based flow is usually a better fit than relying on browser cookies. Common patterns:
-
-- **Recommended (mobile-first): Supabase Auth owns Google login**
-  - React Native signs in with Google via Supabase Auth.
-  - The app calls Spring Boot APIs with `Authorization: Bearer <supabase-jwt>`.
-  - Spring Boot validates the JWT (you'd typically switch to `oauth2ResourceServer().jwt()` and validate against Supabase's JWKS).
-
-- **Alternative: Spring Boot owns Google login, then issues an app token**
-  - React Native opens the backend Google login URL in a browser.
-  - Backend completes Google OAuth, then returns/redirects with an app token (JWT) that the mobile app stores securely.
-
-If you keep the current cookie/session approach with React Native, you’ll need to ensure the in-app browser and your API client consistently share cookies, which is often fragile.
+For Expo, `transferme://auth/callback` is included in the default allowed redirect list. For web development, `http://localhost:8081/auth/callback` and `http://localhost:19006/auth/callback` are included by default.
 
 ## Future Google OAuth2 implementation notes
 
-This is intentionally a skeleton. Common next steps (depending on whether you're building web vs React Native) are:
+Common next steps are:
 
-- **Define the post-login UX**: redirect to your frontend (common) instead of returning `{"ok": true}` when there is no saved request.
-- **Persist application users**: create/update a `User` row after login (email, name, Google subject) and optionally map roles/permissions.
-- **Decide session vs token auth**: for React Native, plan on a token/JWT approach (either Supabase Auth JWTs or your own JWTs).
-- **Add CORS + credentials (if cross-origin)**: if your frontend is on a different origin, configure CORS and allow credentials so cookies are sent.
-- **Revisit CSRF**: CSRF is disabled right now; if you keep cookie-based sessions in production, choose an explicit CSRF strategy.
-- **Logout**: add a clear logout endpoint and document how the frontend should clear auth state.
-
-## Suggested next implementation step
-
-If you keep the current Spring Boot OAuth approach (browser-based), the next backend step is to add:
-
-- a `User` entity
-- a JPA repository
-- a service that creates or updates the user record in Supabase Postgres after successful Google login
-
-That gives you:
-
-- Google for identity
-- Supabase for persistent user storage
-- Spring Boot as the API layer your React Native app talks to
-
-If you switch to the mobile-first Supabase Auth pattern, the next backend step becomes:
-
-- configure Spring Security as a **resource server** that validates Supabase JWTs
-- use the JWT subject/claims to identify the caller
+- Add frontend callback handling that extracts and stores the bearer token.
+- Add logout behavior on the frontend by deleting the stored token.
+- Add refresh tokens or shorter-lived access tokens before production.
+- Set `APP_AUTH_JWT_SECRET` to a strong Render secret, not the dev default.
+- Apply the Supabase migration that creates `app_user` before testing against hosted Supabase.

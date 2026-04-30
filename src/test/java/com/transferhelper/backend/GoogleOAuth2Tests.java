@@ -1,5 +1,6 @@
 package com.transferhelper.backend.security;
 
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.oauth2Login;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -35,7 +36,7 @@ class GoogleOAuth2Tests {
 
 	@Test
 	void apiMe_unauthenticated_isUnauthorized() throws Exception {
-		mockMvc.perform(get("/api/google/oauth"))
+		mockMvc.perform(get("/api/auth/me"))
 				.andExpect(status().isUnauthorized());
 	}
 
@@ -47,12 +48,32 @@ class GoogleOAuth2Tests {
 								.with(oauth2Login()
 										.clientRegistration(google)
 										.attributes(attrs -> {
+											attrs.put("sub", "google-user-123");
 											attrs.put("email", "angel@example.com");
 											attrs.put("name", "Angel");
 										}))
 				)
 				.andExpect(status().isOk())
+				.andExpect(jsonPath("$.authenticated").value(true))
 				.andExpect(jsonPath("$.email").value("angel@example.com"))
 				.andExpect(jsonPath("$.name").value("Angel"));
+	}
+
+	@Test
+	void apiMe_bearerTokenAuthenticated_returnsJwtClaims() throws Exception {
+		mockMvc.perform(
+						get("/api/auth/me")
+								.with(jwt().jwt(token -> token
+										.subject("app-user-123")
+										.claim("email", "angel@example.com")
+										.claim("name", "Angel")
+										.claim("provider", "google")))
+				)
+				.andExpect(status().isOk())
+				.andExpect(jsonPath("$.authenticated").value(true))
+				.andExpect(jsonPath("$.userId").value("app-user-123"))
+				.andExpect(jsonPath("$.email").value("angel@example.com"))
+				.andExpect(jsonPath("$.name").value("Angel"))
+				.andExpect(jsonPath("$.provider").value("google"));
 	}
 }

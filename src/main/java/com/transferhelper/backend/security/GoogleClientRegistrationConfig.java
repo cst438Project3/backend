@@ -2,36 +2,37 @@ package com.transferhelper.backend.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.config.oauth2.client.CommonOAuth2Provider;
 import org.springframework.security.oauth2.client.registration.ClientRegistration;
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository;
-import org.springframework.security.oauth2.core.AuthorizationGrantType;
-import org.springframework.security.oauth2.core.oidc.IdTokenClaimNames;
 
 @Configuration
 public class GoogleClientRegistrationConfig {
+
+	private final String clientId;
+	private final String clientSecret;
+
+	public GoogleClientRegistrationConfig(
+			@Value("${app.oauth.google.client-id}") String clientId,
+			@Value("${app.oauth.google.client-secret}") String clientSecret
+	) {
+		this.clientId = clientId;
+		this.clientSecret = clientSecret;
+	}
 
 	@Bean
 	ClientRegistrationRepository clientRegistrationRepository() {
 		return new InMemoryClientRegistrationRepository(googleClientRegistration());
 	}
 
-	static ClientRegistration googleClientRegistration() {
-		// Override via environment variables in production.
-		String clientId = System.getenv().getOrDefault("GOOGLE_CLIENT_ID", "test-client");
-		String clientSecret = System.getenv().getOrDefault("GOOGLE_CLIENT_SECRET", "test-secret");
-
-		return ClientRegistration.withRegistrationId("google")
+	private ClientRegistration googleClientRegistration() {
+		return CommonOAuth2Provider.GOOGLE.getBuilder("google")
 				.clientId(clientId)
 				.clientSecret(clientSecret)
 				.scope("openid", "profile", "email")
-				.authorizationUri("https://accounts.google.com/o/oauth2/v2/auth")
-				.tokenUri("https://oauth2.googleapis.com/token")
-				.userInfoUri("https://openidconnect.googleapis.com/v1/userinfo")
-				.userNameAttributeName(IdTokenClaimNames.SUB)
 				.redirectUri("{baseUrl}/login/oauth2/code/{registrationId}")
-				.authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
-				.clientName("Google")
 				.build();
 	}
 }

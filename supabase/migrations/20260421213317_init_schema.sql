@@ -1,4 +1,5 @@
 create extension if not exists citext;
+create extension if not exists pgcrypto;
 
 create or replace function set_updated_at()
 returns trigger as $$
@@ -7,6 +8,22 @@ begin
   return new;
 end;
 $$ language plpgsql;
+
+create table app_user (
+    user_id uuid primary key default gen_random_uuid(),
+    provider text not null,
+    provider_subject text not null,
+    email citext not null unique,
+    name text,
+    avatar_url text,
+    created_at timestamptz not null default now(),
+    updated_at timestamptz not null default now(),
+    constraint uq_app_user_provider_subject unique (provider, provider_subject)
+);
+
+create trigger trg_app_user_updated_at
+before update on app_user
+for each row execute function set_updated_at();
 
 create table institution (
     institution_id bigint generated always as identity primary key,
@@ -23,7 +40,7 @@ for each row execute function set_updated_at();
 
 create table student (
     student_id bigint generated always as identity primary key,
-    user_id uuid unique references auth.users(id) on delete cascade,
+    user_id uuid unique references app_user(user_id) on delete cascade,
     name text not null,
     email citext not null unique,
     current_institution_id bigint references institution(institution_id) on delete set null,
