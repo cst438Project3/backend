@@ -1,0 +1,1076 @@
+[
+  {
+    "schoolName": "California Maritime Academy",
+    "code": 1,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Evergreen Valley College",
+    "code": 2,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Los Angeles City College",
+    "code": 3,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "College of Marin",
+    "code": 4,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "College of San Mateo",
+    "code": 5,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "College of the Sequoias",
+    "code": 6,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "University of California, San Diego",
+    "code": 7,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "Butte College",
+    "code": 8,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Cerro Coso Community College",
+    "code": 9,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Columbia College",
+    "code": 10,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California Polytechnic University, San Luis Obispo",
+    "code": 11,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "California State University, Monterey Bay",
+    "code": 12,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Merritt College",
+    "code": 13,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Rancho Santiago College",
+    "code": 14,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Cuesta College",
+    "code": 16,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Merced College",
+    "code": 17,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Las Positas College",
+    "code": 18,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Victor Valley College",
+    "code": 19,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Barstow Community College",
+    "code": 20,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Hayward",
+    "code": 21,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "California State University, San Marcos",
+    "code": 23,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "California State University, Stanislaus",
+    "code": 24,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Los Angeles Trade Technical College",
+    "code": 25,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "San Diego State University",
+    "code": 26,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "American River College",
+    "code": 27,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Contra Costa College",
+    "code": 28,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Fresno",
+    "code": 29,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "College of the Desert",
+    "code": 30,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Los Angeles Harbor College",
+    "code": 31,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Mission College",
+    "code": 32,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "City College of San Francisco",
+    "code": 33,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Compton Community College",
+    "code": 34,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Fresno City College",
+    "code": 35,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Kings River College",
+    "code": 36,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Shasta College",
+    "code": 38,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "San Jose State University",
+    "code": 39,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Lake Tahoe Community College",
+    "code": 40,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Cabrillo College",
+    "code": 41,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Northridge",
+    "code": 42,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Glendale Community College",
+    "code": 43,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Los Angeles Valley College",
+    "code": 44,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "San Diego Miramar College",
+    "code": 45,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "University of California, Riverside",
+    "code": 46,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "Los Angeles Mission College",
+    "code": 47,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Ohlone College",
+    "code": 48,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Pasadena City College",
+    "code": 49,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Dominguez Hills",
+    "code": 50,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Foothill College",
+    "code": 51,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Modesto Junior College",
+    "code": 52,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Mt. San Jacinto College",
+    "code": 53,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "San Diego City College",
+    "code": 54,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Golden West College",
+    "code": 55,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Palomar College",
+    "code": 56,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Santa Rosa Junior College",
+    "code": 57,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Vista Community College",
+    "code": 58,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Sacramento",
+    "code": 60,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Los Medanos College",
+    "code": 61,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Mount San Antonio College",
+    "code": 62,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Palo Verde College",
+    "code": 63,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Rio Hondo College",
+    "code": 64,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Saddleback College",
+    "code": 65,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Santiago Canyon College",
+    "code": 66,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "West Hills College Coalinga",
+    "code": 67,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Canada College",
+    "code": 68,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Chaffey College",
+    "code": 69,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Crafton Hills College",
+    "code": 70,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Cypress College",
+    "code": 71,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Gavilan College",
+    "code": 72,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Napa Valley College",
+    "code": 73,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Orange Coast College",
+    "code": 74,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California Polytechnic University, Pomona",
+    "code": 75,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "California State University, Los Angeles",
+    "code": 76,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Laney College",
+    "code": 77,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Riverside City College",
+    "code": 78,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "University of California, Berkeley",
+    "code": 79,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "West Valley College",
+    "code": 80,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Long Beach",
+    "code": 81,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Lassen Community College",
+    "code": 82,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "College of the Redwoods",
+    "code": 83,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Bakersfield College",
+    "code": 84,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, San Bernardino",
+    "code": 85,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Los Angeles Pierce College",
+    "code": 86,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Oxnard College",
+    "code": 87,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Sonoma State University",
+    "code": 88,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "University of California, Davis",
+    "code": 89,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "Yuba College",
+    "code": 90,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "West Los Angeles College",
+    "code": 91,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Santa Barbara City College",
+    "code": 92,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Sierra College",
+    "code": 93,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Solano Community College",
+    "code": 94,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Ventura College",
+    "code": 95,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Chabot College",
+    "code": 96,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Citrus College",
+    "code": 97,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Bakersfield",
+    "code": 98,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Cuyamaca College",
+    "code": 99,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Mendocino College",
+    "code": 100,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "San Diego Mesa College",
+    "code": 101,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "College of the Siskiyous",
+    "code": 102,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "El Camino College",
+    "code": 103,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Cerritos College",
+    "code": 104,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Coastline Community College",
+    "code": 105,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Grossmont College",
+    "code": 106,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Imperial Valley College",
+    "code": 107,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "MiraCosta College",
+    "code": 108,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "San Joaquin Delta College",
+    "code": 109,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Allan Hancock College",
+    "code": 110,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "College of Alameda",
+    "code": 111,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Copper Mountain College",
+    "code": 112,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "De Anza College",
+    "code": 113,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Diablo Valley College",
+    "code": 114,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Humboldt State University",
+    "code": 115,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "San Francisco State University",
+    "code": 116,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "University of California, Los Angeles",
+    "code": 117,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "East Los Angeles College",
+    "code": 118,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Taft College",
+    "code": 119,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "University of California, Irvine",
+    "code": 120,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "Antelope Valley College",
+    "code": 121,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Feather River College",
+    "code": 122,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Hartnell College",
+    "code": 123,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Irvine Valley College",
+    "code": 124,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Porterville College",
+    "code": 125,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Sacramento City College",
+    "code": 126,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Skyline College",
+    "code": 127,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "University of California, Santa Barbara",
+    "code": 128,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "California State University, Fullerton",
+    "code": 129,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Los Angeles Southwest College",
+    "code": 130,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "San Bernardino Valley College",
+    "code": 131,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "University of California, Santa Cruz",
+    "code": 132,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "Monterey Peninsula College",
+    "code": 133,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Fullerton College",
+    "code": 134,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Long Beach City College",
+    "code": 135,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "San Jose City College",
+    "code": 136,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Santa Monica College",
+    "code": 137,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Southwestern College",
+    "code": 138,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Moorpark College",
+    "code": 139,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "College of the Canyons",
+    "code": 140,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Chico",
+    "code": 141,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "Cosumnes River College",
+    "code": 142,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California State University, Channel Islands",
+    "code": 143,
+    "isCommunityCollege": false,
+    "category": 0
+  },
+  {
+    "schoolName": "University of California, Merced",
+    "code": 144,
+    "isCommunityCollege": false,
+    "category": 1
+  },
+  {
+    "schoolName": "Folsom Lake College",
+    "code": 145,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "West Hills College Lemoore",
+    "code": 146,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Woodland Community College",
+    "code": 147,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Norco College",
+    "code": 148,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Moreno Valley College",
+    "code": 149,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Clovis Community College",
+    "code": 150,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Compton College",
+    "code": 153,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "Madera Community College",
+    "code": 200,
+    "isCommunityCollege": true,
+    "category": 2
+  },
+  {
+    "schoolName": "California Lutheran University",
+    "code": 201,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Charles R. Drew University of Medicine and Science",
+    "code": 204,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "California Baptist University",
+    "code": 205,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Fresno Pacific University",
+    "code": 206,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Concordia University Irvine",
+    "code": 207,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Laguna College of Art + Design",
+    "code": 208,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Loyola Marymount University",
+    "code": 209,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Los Angeles Pacific University",
+    "code": 210,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Dominican University of California",
+    "code": 211,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Mount Saint Mary's University Los Angeles",
+    "code": 212,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "National University",
+    "code": 213,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Pepperdine University",
+    "code": 214,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Touro University Worldwide",
+    "code": 215,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Menlo College",
+    "code": 216,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "University of the Pacific",
+    "code": 217,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "University of La Verne",
+    "code": 218,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Notre Dame de Namur University",
+    "code": 219,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "University of Redlands",
+    "code": 220,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Palo Alto University",
+    "code": 222,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Whittier College",
+    "code": 224,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Saint Mary's College of California",
+    "code": 225,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Santa Clara University",
+    "code": 227,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Simpson University",
+    "code": 228,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Antioch University",
+    "code": 229,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Azusa Pacific University",
+    "code": 230,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "La Sierra University",
+    "code": 231,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Southern California University of Health Sciences",
+    "code": 232,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Stanton University",
+    "code": 233,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "University of San Diego",
+    "code": 234,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "University of San Francisco",
+    "code": 235,
+    "isCommunityCollege": false,
+    "category": 5
+  },
+  {
+    "schoolName": "Vanguard University of Southern California",
+    "code": 236,
+    "isCommunityCollege": false,
+    "category": 5
+  }
+]
